@@ -1,2 +1,3 @@
-# dio_game_dev
-Repo for game development lectures from DIO
+# DIO Game Development
+
+Repository for game development lectures from DIO.
