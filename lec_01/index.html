@@ -6,8 +6,12 @@
         <h1><strong id="title" style="color: blue">My first <i>HTML!</i></strong></h1>
         <h2 style="color: peru">Examples of input</h2>
         <p><input type="text"/></p>
-        <p><input type="number"/></p>
+        <p><input type="number" min="0" max="100" step="5"/></p>
+        <p><input type="range" min="0" max="100" step="5" value="5"/></p>
+        <p><input type="checkbox"/> </p>
         <p><input type="color"/></p>
+        <p><button type="button">Button input</button></p>
+        <p><button</p>
 
         <blockquote>
             <i>This is a citation of something smart someone said</i>
@@ -34,9 +38,36 @@
             </ol>
         </ul>
 
+        <h1 style="color: blueviolet;">Forms</h1>
+        <h2>Signup form</h2>
+        <form name="signup" onsubmit="alert('Successfully signup!');" autocomplete="off" target="_self" action="#" method="get">
+            <!-- action: send to a backend endpoint -->
+            <p><h3>User data</h3></p>
+            <label>Name:</label><input type="text" name="name"/><br>
+            <label>Birthday:</label><input type="date" name="birthday"/><br>
+            <label>E-mail:</label><input type="email" name="email"/><br>
+            <label>Password:</label><input type="password" name="password"/><br>
+            <label>Role:</label>
+            <select name="role">
+                <opttion value="">Select one option</opttion>
+                <option value="engineer">Engineer</option>
+                <option value="manager">Manager</option>
+            </select>
+            
+            <p><h3>Checkbox Options</h3></p>
+            <label>Option 1:</label><input type="checkbox" name="options[]" value="option1"/><br>
+            <label>Option 2:</label><input type="checkbox" name="options[]" value="option2"/><br>
+            
+            <p><h3>Radio Button Options</h3></p>
+            <label>Yes</label><input type="radio" name="newsletter" value="true"/><br>
+            <label>No</label><input type="radio" name="newsletter" value="false"/><br>
+            <p><button type="submit">Signup</button></p>
+            <p><button type="reset">Clear form</button></p>
+        </form>
+
         <h2>References</h2>
         <ul>
-            <li><a href="https://www.pqsr2.com" target="_blank">PQSR2 Home</a></li>
+            <li><a href="https://www.pqsr2.com" title="Click here to see the magic" target="_blank">PQSR2 Home</a></li>
         </ul>
         
     </body>
