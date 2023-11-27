@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .texto,
+        h1,
+        #link-suporte {
+            color: red;
+            background: lightblue;
+        }
+
+        p.texto {
+            color: blueviolet
+        }
+
+        h1,
+        [id^="botao-"] {
+            font-weight: bold;
+            background: lightcoral;
+        }
+
+        /* Combinador descendente */
+        li {
+            color: red;
+        }
+
+        li li {
+            color: blue;
+        }
+
+        .fundo-verde li {
+            background: lightgreen;
+        }
+
+        .fundo-azul li {
+            background: lightblue;
+        }
+
+        .fundo-verde #sublist-01 li {
+            color: black;
+        }
+
+        /* Combinador filho */
+        /* div p {
+            background: lightgrey;
+        }
+
+        div>p {
+            color: purple;
+            font-weight: bold;
+        } */
+
+        /* Combinador irmão */
+        div + p {
+            color: tomato;
+        }
+
+        .fundo-verde + p {
+            background: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agrupamento de Seletores</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar
+        os seletores
+        utilizando uma vírgula (,).</p>
+    <div class="texto">Assim não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer um
+        só bloco de
+        CSS e reutilziar as mesmas regras!</div>
+
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique aqui para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="./index.html">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar página</button>
+
+    <ul>
+        <li class="fundo-verde" id="list-01">
+            <div>Item 1</div>
+            <ul id="sublist-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="list-02">
+            <div>Item 2</div>
+            <ul id="sublist-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="list-03">
+            <div>Item 3</div>
+            <ul id="sublist-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+    <br><br>
+    <div class="fundo-verde">
+        <p>Paragraph 1 inside div</p>
+        <p>Paragraph 2 inside div</p>
+        <span>
+            <p>Paragraph 3 inside div, inside span</p>
+        </span>
+    </div>
+
+    <p>Paragraph 4 outside div</p>
+    <p>Paragraph 5 outside div</p>
+
+    <div class="fundo-azul">
+        <p>Paragraph 6 inside div</p>
+        <p>Paragraph 7 inside div</p>
+        <span>
+            <p>Paragraph 8 inside div, inside span</p>
+        </span>
+    </div>
+
+    <p>Paragraph 9 outside div</p>
+    <p>Paragraph 10 outside div</p>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/* TAG Selector */
+h1 {
+    background: darkblue;
+    color: lightgreen;
+}
+
+h2 {
+    color: purple;
+}
+
+div {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/* ID Selector */
+#welcome-text {
+    background-color: red;
+    color: white;
+}
+
+#selectors-intro {
+    background-color: blueviolet;
+    color: lightgray;
+}
+
+/* Class Selector */
+.common-selectors {
+    color: red;
+}
+
+.capital-text {
+    text-transform: uppercase;
+}
+
+/* Universal Selector */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Attribute Selector */
+[title]{ 
+    color: darkgreen;
+}
+[title="Netflix"]{ 
+    color: red;
+}
+[title~="Dis"]{ 
+    color: blue;
+}
+/* prefix */
+[href^="http://"]{
+    background: lightgreen;
+}
+/* suffix */
+[href$="login"]{
+    background: lightgrey;
+}
