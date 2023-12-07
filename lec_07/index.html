@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    .example {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border-style: dotted dashed double solid;
+        border-width: 10px 20px;
+        border-color: purple greenyellow;
+    }
+    .example-radius {
+        background-color: palevioletred;
+        width: 200px;
+        height: 200px;
+        border: 10px solid purple;
+        border-radius: 10px 20px 30px 50px;
+    }
+    .image-example {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        border: 20px solid
+    }
+    #example-1 {
+        border-image-source: url('./assets/images/background-02.jpg');
+        border-image-slice: 50;
+    }
+    #example-2 {
+        border-image-source: linear-gradient(red, blue);
+        border-image-slice: 10;
+    }
+
+</style>
+<body>
+    <h1>Borders</h1>
+    <p>We can define configs for the borders using:</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Example</h2>
+    <div class="example"></div>
+    
+    <br>
+    <div class="example-radius"></div>
+
+    <h1>Borders with image</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <h2>Examples</h2>
+    <div id="example-1" class="image-example"></div>
+    <br>
+    <div id="example-2" class="image-example"></div>
+</body>
+</html>
